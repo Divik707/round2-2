@@ -14,7 +14,7 @@ export default function Home() {
   useEffect(() => {
     const handleContextMenu = (e: MouseEvent) => {
       e.preventDefault();
-      alert("Try something new instead of inspecting 😉");
+      alert("Try something new to inspect other than right click 😉");
     };
     document.addEventListener("contextmenu", handleContextMenu);
     return () => document.removeEventListener("contextmenu", handleContextMenu);
